@@ -1,24 +1,30 @@
-# README
+PostgreSQL
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Relationship
 
-Things you may want to cover:
+one to one ->  one student has one profile
+one to many -> one user has many addressed
+many to many -> many student can enroll in many courses
 
-* Ruby version
+Joins 
+Inner join/ Left outer join/ Right outer join
+Available in user model
 
-* System dependencies
+Triggers
+- trigger file - CreateTriggerProductsDelete
+- Product model
 
-* Configuration
 
-* Database creation
+Constraints
+- create_users migration contains below constraint
+1. not null constraint
+2. default constraint
+3. unique constraint
+4. check constraint
+5. primary key
+6. foreign key - check create addresses migration
 
-* Database initialization
+Views
+simple view - users_with_addresses_v01.sql
+materialized view - users_with_maddresses_v01.sql
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...

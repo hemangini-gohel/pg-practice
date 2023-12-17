@@ -1,0 +1,5 @@
+class Student < ApplicationRecord
+  has_many :enrollments
+  has_many :courses, through: :enrollments
+  has_one :profile
+end
